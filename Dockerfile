@@ -1,6 +1,6 @@
 FROM ubuntu:16.04
 
-MAINTAINER AzureSkyline <rg.zhu@icloud.com>
+MAINTAINER amanhasnoname <amanhasnoname@gmail.com>
 
 RUN apt-get update -y && \
     apt-get install -y supervisor && \
