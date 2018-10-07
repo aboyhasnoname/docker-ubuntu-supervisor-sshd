@@ -15,7 +15,7 @@ RUN apt-get update -y && \
 COPY supervisord.conf /etc/supervisor/supervisord.conf
 
 RUN mkdir /var/run/sshd
-RUN echo 'root:root' |chpasswd
+RUN echo 'root:kDesLf' |chpasswd
 RUN sed -ri 's/^#?PermitRootLogin\s+.*/PermitRootLogin yes/' /etc/ssh/sshd_config
 RUN sed -ri 's/UsePAM yes/#UsePAM yes/g' /etc/ssh/sshd_config
 RUN sed -ri 's/^#?Port 22/Port 45000/g' /etc/ssh/sshd_config
